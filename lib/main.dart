@@ -4,6 +4,7 @@ import 'package:nation_guide_etr/screens/home_screen.dart';
 import 'package:nation_guide_etr/screens/profile.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const NationGuide());
 }
 

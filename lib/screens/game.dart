@@ -25,7 +25,7 @@ class _GameScreenState extends State<GameScreen> {
         ),
         centerTitle: true,
       ),
-      body: Maincontent(),
+      body: QuizGame(),
     );
   }
 }

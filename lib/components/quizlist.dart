@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:nation_guide_etr/data/backdata.dart';
 import 'package:nation_guide_etr/models/quiz.dart';
 
-class Maincontent extends StatefulWidget {
-  Maincontent({super.key});
+class QuizGame extends StatefulWidget {
+  QuizGame({super.key});
 
   @override
-  State<Maincontent> createState() => _MaincontentState();
+  State<QuizGame> createState() => _QuizGame();
 }
 
-class _MaincontentState extends State<Maincontent> {
+class _QuizGame extends State<QuizGame> {
 
   bool isFinished = false;
   final List<CountryQuiz> queslist = generateCountryQuiz();
@@ -26,9 +26,9 @@ class _MaincontentState extends State<Maincontent> {
       } else {
         isFinished = true;
         if (score >= 0 && score <= 5) {
-          remarks = 'You failed!';
+          remarks = 'Keep Trying!';
         } else if (score >= 6 && score <= 8) {
-          remarks = 'That\'s good!';
+          remarks = 'Good!';
         } else if (score >= 9 && score <= 10) {
           remarks = 'Perfect!';
         }
